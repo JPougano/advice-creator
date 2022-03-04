@@ -1,0 +1,81 @@
+/* reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --text-color: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --card-bg: hsl(217, 19%, 24%);
+    --bg: hsl(218, 23%, 16%);
+}
+
+body{
+    background-color: var(--bg);
+    font-family: 'Manrope', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: auto;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    margin: 30vh auto;
+    padding: 2rem;
+    padding-bottom: 0;
+    box-shadow: 0 0 .5em hsl(217, 19%, 38%);
+}
+
+@media screen and (min-width: 800px){
+    .container{
+        width: 500px;
+    }
+}
+
+.advice__number{
+    color: var(--neon-green);
+    letter-spacing: 7px;
+    font-size: 18px;
+    
+}
+
+.advice{
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--text-color);
+}
+
+.dice__span{
+    position: relative;
+    top: 40px;
+    height: 85px;
+    width: 85px;
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.dice__span:hover{
+    box-shadow: 0 0 3em var(--neon-green);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.dice{
+    width: 30px;
+    height: 30px;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
