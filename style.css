@@ -14,6 +14,9 @@
 body{
     background-color: var(--bg);
     font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container{
@@ -24,8 +27,8 @@ body{
     height: auto;
     background-color: var(--card-bg);
     border-radius: 10px;
-    margin: 30vh auto;
     padding: 2rem;
+    margin: 30vh 0 100px 0;
     padding-bottom: 0;
     box-shadow: 0 0 .5em hsl(217, 19%, 38%);
 }
@@ -74,8 +77,10 @@ body{
 }
 
 .attribution {
-    font-size: 11px; text-align: center;
+    font-size: 11px;
+    text-align: center;
+    color: var(--text-color);
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--neon-green);
 }
