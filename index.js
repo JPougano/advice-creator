@@ -31,3 +31,5 @@ function paginaCarregou(cb) {
   };
 
   paginaCarregou()
+
+  const wallBrabo = "Wallace Brabo"
